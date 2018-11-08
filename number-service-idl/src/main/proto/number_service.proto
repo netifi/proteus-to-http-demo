@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package proteus.demo.number;
+
+option java_package = "proteus.demo.number";
+option java_outer_classname = "NumberProto";
+option java_multiple_files = true;
+
+service NumberService {
+    rpc GetRandomNumber (NumberRequest) returns (NumberResponse) {}
+}
+
+message NumberRequest {
+    int32 min = 1;
+    int32 max = 2;
+}
+
+message NumberResponse {
+    int32 result = 1;
+}

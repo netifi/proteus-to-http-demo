@@ -1,0 +1,12 @@
+rootProject.name = 'proteus-to-http-demo'
+include 'char-service'
+include 'char-service-idl'
+include 'color-service'
+include 'http-service'
+include 'color-service-idl'
+include 'number-service'
+include 'number-service-idl'
+include 'string-service'
+include 'string-service-idl'
+
+

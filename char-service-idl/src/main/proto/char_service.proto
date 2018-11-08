@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+package proteus.demo.char_service;
+
+option java_package = "proteus.demo.char_service";
+option java_outer_classname = "CharProto";
+option java_multiple_files = true;
+
+service CharService {
+
+    rpc streamCharacters (CharRequest) returns (stream CharResponse) {}
+}
+
+message CharRequest {
+    int32 size = 1;
+}
+
+message CharResponse {
+    string message = 1;
+}

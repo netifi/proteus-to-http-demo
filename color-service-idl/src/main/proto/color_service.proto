@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+
+package proteus.demo.color;
+
+option java_package = "proteus.demo.color";
+
+option java_outer_classname = "ColorProto";
+option java_multiple_files = true;
+
+service ColorService {
+
+    rpc getRandomColor (ColorRequest) returns (ColorResponse) {}
+}
+
+message ColorRequest {}
+
+message ColorResponse {
+    string message = 1;
+}

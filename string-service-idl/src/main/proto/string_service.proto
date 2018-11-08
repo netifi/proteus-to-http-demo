@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+
+package proteus.demo.string_service;
+
+option java_package = "proteus.demo.string_service";
+option java_outer_classname = "StringProto";
+option java_multiple_files = true;
+
+service StringService {
+
+    rpc GetRandomString (StringRequest) returns (StringResponse) {}
+}
+
+message StringRequest {
+    int32 size = 1;
+}
+
+message StringResponse {
+    string message = 1;
+}

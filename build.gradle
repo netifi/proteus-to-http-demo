@@ -1,0 +1,22 @@
+subprojects {
+    apply plugin: 'idea'
+
+    group 'proteus.demo'
+    version '1.5.2'
+
+    ext {
+        protobufVersion = '3.6.1'
+        proteusVersion = '1.5.2'
+        rsocketRpcVersion = '0.2.10'
+        proteusSpringVersion = '1.5.2'
+        springBootBomVersion = '2.0.6.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+        jcenter()
+        maven {
+            url 'https://dl.bintray.com/netifi/netifi-oss/'
+        }
+    }
+}
