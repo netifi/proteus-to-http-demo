@@ -19,7 +19,7 @@ Follow the steps below to get a client and service communicating via Proteus in 
 
 1. In a new terminal window, pull the latest Proteus Broker Docker image by running the following command:
 
-        docker pull netifi/proteus
+        docker pull netifi/proteus:1.5.2
         
 2. Next, run the following command to start the Proteus Broker:
 
@@ -32,7 +32,7 @@ Follow the steps below to get a client and service communicating via Proteus in 
         '-Dnetifi.authentication.0.accessToken=kTBDVtfRBO4tHOnZzSyY5ym2kfY=' \
         '-Dnetifi.broker.admin.accessKey=9007199254740991' \
         '-Dnetifi.broker.admin.accessToken=kTBDVtfRBO4tHOnZzSyY5ym2kfY='" \
-        netifi/proteus
+        netifi/proteus:1.5.2
 
 ## Bugs and Feedback
 For bugs, questions, and discussions please use the [Github Issues](https://github.com/netifi/proteus-spring-quickstart/issues).
